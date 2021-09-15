@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Survey Form</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="https://livejs.com/live.js"></script>
+    </head>
+    <body>
+        <div id="title">
+            <h1>Survey of our brand new product</h1>
+        </div>
+        <div id="#description">
+            <p>Share us what you think. So that we can do better!</p>
+        </div>
+        <form action="" id="survey-form" method="POST">
+            <label for="name" id="name-label">Name:</label><br>
+            <input type="text" name="name" id="name" placeholder="Ex : MaoZeDong" value="" >
+            <br>
+            <label for="email" id="email-label">Email:</label><br>
+            <input type="email" name="email" id="email" placeholder="abcd@gmail.com">
+            <br>
+            <label for="number" id="number-label">Your Rating:</label><br>
+            <input type="number" name="number" id="number" placeholder="1-5" step="1" min="1" max="5">
+            <br>
+            <label for="choose-product">Choose a car:</label>
+            <select name="choose-product" id="dropdown">
+              <option value="samsung">Samsung</option>
+              <option value="apple">Apple</option>
+              <option value="huawei">Huawei</option>
+              <option value="oppo">Oppo</option>
+              <option value="vivo">Vivo</option>
+            </select>
+            <br>
+            <p>Do you like our product?</p>
+            <label for="yes">Yes</label>
+            <input type="radio" name="like-or-no" id="yes" value="yes">
+            <label for="no">No</label>
+            <input type="radio" name="like-or-no" id="no" value="no">
+            <p>If yes, what do you like about us ?</p>
+            <label for="high-tech">Our products are high-tech</label>
+            <input type="checkbox" name="compliment" id="high-tech" value="high-tech"><br>
+            <label for="high-quality">Our products are high quality</label>
+            <input type="checkbox" name="compliment" id="high-quality" value="high-quality"><br>            
+            <label for="cheap">Our products are in reasonable prices</label>
+            <input type="checkbox" name="compliment" id="cheap value="cheap">
+            <br>
+            <label for="comments">Anything else you want to say?</label><br>
+            <textarea name="comments" id="comments" cols="30" rows="3" placeholder="Additional Comments"></textarea>
+            <br>
+            <input type="submit" id="submit" value="Send">
+            
+        </form>
+        
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <script src="" async defer></script>
+    </body>
+</html>
