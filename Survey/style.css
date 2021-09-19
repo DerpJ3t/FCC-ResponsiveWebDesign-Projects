@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    font-size: 1.1em;
+    display: grid;
+    grid-template-rows: 10% 5% auto;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#name-label, #email-label, #comment-label, #gender-title,#number-label, #product-title,#compliment-question{
+    font-weight: 600;
+    font-size: 20px;
+}
+#title{
+    margin: 10px;
+    text-align: center;
+    grid-area: 1 / 1 
+}
+#survey-form{
+    max-width: 800px;
+    background: #fff;
+    padding: 25px;
+    border: 1px solid greenyellow;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 35px;
+    align-self: center;
+    width: 70vw;
+}
+
+input[type=text],input[type=email] , textarea{
+    width: 80%;
+    height: 45px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    border-bottom-width: 2px;
+}
+#number{
+    width: 30%;
+    height: 30px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+#gender-container  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+#name:focus, #email:focus, #number:focus,textarea:focus{
+    border-color: #6eb9ff;
+}
+
+#gender-container  label{ /* The container */
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+#gender-container label input{  /* Hide the browser's default radio button */
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+/* Create a custom radio button */
+.radio-button{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a  background color */
+#gender-container input ~.radio-button:hover{
+    background-color: #ccc;
+}
+/* When the radio button is checked, change background color */
+#gender-container input:checked ~.radio-button{
+    background-color: hsl(145, 100%, 50%);
+}
+
