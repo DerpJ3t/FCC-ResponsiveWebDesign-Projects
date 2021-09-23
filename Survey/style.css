@@ -67,6 +67,7 @@ input[type=text],input[type=email] , textarea{
     width: 90%;
     margin-left: 10px;
     margin-top: 5px;
+    margin-bottom: 5px;
 }
 #name:focus, #email:focus, #number:focus,textarea:focus{
     border-color: #6eb9ff;
@@ -95,8 +96,8 @@ input[type=text],input[type=email] , textarea{
     position: absolute;
     top: 0;
     left: 0;
-    height: 25px;
-    width: 25px;
+    height: 20px;
+    width: 20px;
     background-color: #eee;
     border-radius: 50%;
 }
@@ -108,5 +109,26 @@ input[type=text],input[type=email] , textarea{
 /* When the radio button is checked, change background color */
 #gender-container input:checked ~.radio-button{
     background-color: hsl(145, 100%, 50%);
+}
+
+select{
+    /*reset styles*/
+    background: linear-gradient(285deg, #87cefa, #fff5ee);
+    opacity: 70%;
+    border: none;
+    padding: 0 1em 0 0 ;
+    margin-top: 7px;
+    height: 30px;
+    width: 60%;
+    font-family: inherit;
+    font-weight: bolder;
+    font-size: 15px;
+    border-radius: 10px; 
+    border: 1px solid  black;
+}
+select:focus{
+    border: 1px solid  #7649ffee;
+    border-bottom-width: 2px;
+    transition: all 0.2s ease-in;
 }
 
