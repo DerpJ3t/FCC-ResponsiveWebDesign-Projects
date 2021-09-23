@@ -26,7 +26,7 @@
                 <input type="text" name="name" id="name" placeholder="Ex : MaoZeDong" value="" >
                 <br>
                 <label for="email" id="email-label">Email:</label><br>
-                <input type="email" name="email" id="email" placeholder="abcd@gmail.com">
+                <input type="email" name="email" id="email" placeholder="womenhuainiantamen@aliyun.com">
                 <br>
                 <p id="gender-title">Gender:</p>
                 <div id="gender-container">
@@ -59,13 +59,19 @@
                 </div>   
                 <br>
                 <p id="compliment-question">What do you like about us?</p>
-                <label for="high-tech">Our products are high-tech</label>
-                <input type="checkbox" name="compliment" id="high-tech" value="high-tech"><br>
-                <label for="high-quality">Our products are high quality</label>
-                <input type="checkbox" name="compliment" id="high-quality" value="high-quality"><br>            
-                <label for="cheap">Our products are in reasonable prices</label>
-                <input type="checkbox" name="compliment" id="cheap value="cheap">
-                <br>
+                <label for="high-tech" class="checkbox-container">Our products are high-tech
+                    <input type="checkbox" name="compliment" id="high-tech" value="high-tech">
+                    <span class="checkmark"></span>
+                </label>
+                <label for="high-quality" class="checkbox-container">
+                    Our products are high quality<input type="checkbox" name="compliment" id="high-quality" value="high-quality">
+                    <span class="checkmark"></span>
+                </label>        
+                <label for="cheap" class="checkbox-container">
+                    Our products are in reasonable prices<input type="checkbox" name="compliment" id="cheap" value="cheap">
+                    <span class="checkmark"></span>
+                </label>
+                
                 <label for="comments" id="comment-label">Anything else you want to say?</label><br>
                 <textarea name="comments" id="comments" cols="30" rows="3" placeholder="Additional Comments"></textarea>
                 <br>
