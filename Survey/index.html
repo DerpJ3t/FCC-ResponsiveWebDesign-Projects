@@ -8,7 +8,6 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Survey Form</title>
-        <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
         <script type="text/javascript" src="https://livejs.com/live.js"></script>
@@ -17,7 +16,7 @@
         <div id="title">
             <h1>Survey of our brand new product</h1>
         </div>
-        <div id="#description">
+        <div id="description">
             <p>Share us what you think. So that we can do better!</p>
         </div>
         <main>
@@ -73,9 +72,12 @@
                 </label>
                 
                 <label for="comments" id="comment-label">Anything else you want to say?</label><br>
-                <textarea name="comments" id="comments" cols="30" rows="3" placeholder="Additional Comments"></textarea>
+                <textarea name="comments" id="comments" cols="30" rows="4" placeholder="Additional Comments"></textarea>
                 <br>
-                <input type="submit" id="submit" value="Send">
+                <div class="button">
+                    <input type="submit" id="submit" value="Send">
+                </div>
+                
                 
             </form>
         </main>        

@@ -9,7 +9,7 @@ body{
     background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
     font-size: 1.1em;
     display: grid;
-    grid-template-rows: 10% 5% auto;
+    grid-template-rows: auto auto auto;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -20,12 +20,24 @@ body{
     font-size: 20px;
 }
 #title{
-    margin: 10px;
-    text-align: center;
-    grid-area: 1 / 1 
+    display: flex;
+    position: relative;
+    grid-area: 1 / 1 ;
+    justify-content: center;
+    align-items : center;
+    
 }
+#description {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+
 #survey-form{
-    max-width: 800px;
+    height: 100%;
+    max-width: 700px;
     background: #fff;
     padding: 25px;
     border: 1px solid greenyellow;
@@ -33,7 +45,7 @@ body{
     margin-top: 10px;
     margin-bottom: 35px;
     align-self: center;
-    width: 70vw;
+    
 }
 
 input[type=text],input[type=email] , textarea{
@@ -64,10 +76,8 @@ input[type=text],input[type=email] , textarea{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 90%;
+    width: 80%;
     margin-left: 10px;
-    margin-top: 5px;
-    margin-bottom: 5px;
 }
 #name:focus, #email:focus, #number:focus,textarea:focus{
     border-color: #6eb9ff;
@@ -89,6 +99,7 @@ input[type=text],input[type=email] , textarea{
 #gender-container label input{  /* Hide the browser's default radio button */
     position: absolute;
     opacity: 0;
+    margin-right: 0;
     cursor: pointer;
 }
 /* Create a custom radio button */
@@ -198,4 +209,58 @@ select:focus{
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
+}
+textarea{
+    margin-top: 10px;
+    height: 45px;
+}
+
+form .button{
+    height: 45px;
+    margin: 15px 0;
+}
+form .button input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #fff;
+    background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    border: none;
+    font-size: 18px;
+    font-weight: bolder;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: all 0.2 ease-out;
+}
+form .button input:hover{
+    background: linear-gradient(-120deg, #84fab0 0%, #8fd3f4 100%)
+}
+
+@media (max-width: 584px){
+    #title{
+        width: 100%;
+        font-size: 12px;
+        flex-wrap: wrap;
+        
+    }
+    #description{
+        width: 100%;
+        font-size: 10px;
+        flex-wrap: wrap;
+        font-weight: bold;
+    }
+    #survey-form{
+        max-width: 100%;
+    }
+    #gender-container  {
+         width: 100%
+    }    
+}
+@media (min-height: 1080px){
+    body{
+        grid-template-rows: 5% 3% auto;
+    }
+    #survey-form{
+        height: 80vh;
+    }    
 }
